@@ -1,6 +1,7 @@
 package com.example.pneumaticstorezavrsni2;
 
 import android.os.Bundle;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
@@ -15,13 +16,15 @@ import com.example.pneumaticstorezavrsni2.R;
 
 public class MainActivity extends AppCompatActivity {
 
+    TextView topTitle;
     private BottomNavigationView bottomNavigationView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        bottomNavigationView = findViewById(R.id.bottom_navigation);
+        topTitle = findViewById(R.id.top_title);   //Top title
+        bottomNavigationView = findViewById(R.id.bottom_navigation);   // Bot nav
 
         // Set default fragment
         getSupportFragmentManager().beginTransaction()
@@ -35,12 +38,22 @@ public class MainActivity extends AppCompatActivity {
 
             if (itemId == R.id.nav_store) {
                 selectedFragment = new StoreFragment();
-            } else if (itemId == R.id.nav_library) {
+                topTitle.setText("Store");
+            }
+
+            else if (itemId == R.id.nav_library) {
                 selectedFragment = new LibraryFragment();
-            } else if (itemId == R.id.nav_profile) {
+                topTitle.setText("Library");
+            }
+
+            else if (itemId == R.id.nav_profile) {
                 selectedFragment = new ProfileFragment();
-            } else if (itemId == R.id.nav_settings) {
+                topTitle.setText("Profile");
+            }
+
+            else if (itemId == R.id.nav_settings) {
                 selectedFragment = new SettingsFragment();
+                topTitle.setText("Settings");
             }
 
 
