@@ -6,9 +6,9 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:icon="@drawable/pneumatic_mobile_logo"
+        android:label="Pneumatic"
+        android:roundIcon="@drawable/pneumatic_mobile_logo"
         android:supportsRtl="true"
         android:theme="@style/Theme.PneumaticStoreZavrsni2">
         <activity
@@ -21,6 +21,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".GameDetailActivity" />
+        <activity android:name=".LoginActivity" />
     </application>
 
 </manifest>

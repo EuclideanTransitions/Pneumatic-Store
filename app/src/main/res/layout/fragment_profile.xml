@@ -1,6 +1,30 @@
-<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
-    android:text="Sample tekst za sad \n(Profile)"
-    android:textSize="24sp"/>
+    android:padding="24dp">
+
+    <!-- Logout button in top-right -->
+    <Button
+        android:id="@+id/logout_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:backgroundTint="?android:attr/colorPrimary"
+        android:text="Logout"
+        app:cornerRadius="0dp" />
+
+    <!-- Centered Profile Title -->
+    <TextView
+        android:id="@+id/profile_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Profile"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerInParent="true"
+        android:textAlignment="center" />
+</RelativeLayout>
