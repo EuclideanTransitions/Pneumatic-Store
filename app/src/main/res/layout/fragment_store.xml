@@ -11,8 +11,9 @@
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="20dp"
-            android:text="Top Rated" />
+            android:layout_height="25dp"
+            android:text="Top Rated"
+            android:textSize="20sp" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/row1Recycler"
@@ -23,8 +24,9 @@
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="20dp"
-            android:text="New Releases" />
+            android:layout_height="25dp"
+            android:text="New Releases"
+            android:textSize="20sp" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/row2Recycler"
@@ -35,8 +37,9 @@
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="20dp"
-            android:text="On Sale" />
+            android:layout_height="25dp"
+            android:text="On Sale"
+            android:textSize="20sp" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/row3Recycler"
@@ -47,8 +50,9 @@
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="20dp"
-            android:text="Recommended" />
+            android:layout_height="25dp"
+            android:text="Recommended"
+            android:textSize="20sp" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/row4Recycler"
