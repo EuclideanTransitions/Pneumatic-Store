@@ -11,6 +11,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import com.example.pneumaticstorezavrsni2.LoginActivity;
+import com.example.pneumaticstorezavrsni2.FriendsActivity;
+import com.example.pneumaticstorezavrsni2.GroupsActivity;
 import com.example.pneumaticstorezavrsni2.R;
 
 public class ProfileFragment extends Fragment {
@@ -32,6 +34,20 @@ public class ProfileFragment extends Fragment {
             Intent intent = new Intent(getActivity(), LoginActivity.class);
             startActivity(intent);
             requireActivity().finish();
+        });
+
+        // Go to friends list
+        Button friendsButton = view.findViewById(R.id.friends_button);
+        friendsButton.setOnClickListener(v -> {
+            Intent intent = new Intent(getActivity(), FriendsActivity.class);
+            startActivity(intent);
+        });
+
+        // Go to groups list
+        Button groupsButton = view.findViewById(R.id.groups_button);
+        groupsButton.setOnClickListener(v -> {
+            Intent intent = new Intent(getActivity(), GroupsActivity.class);
+            startActivity(intent);
         });
 
         return view;

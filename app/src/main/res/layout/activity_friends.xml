@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <!-- Centered Text -->
+    <TextView
+        android:id="@+id/friends_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Not implemented yet"
+        android:textSize="20sp"
+        android:layout_centerInParent="true" />
+
+    <!-- Back Button -->
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/friends_message"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="?android:attr/colorPrimary"
+        android:text="Back to Profile"
+        app:cornerRadius="0dp" />
+</RelativeLayout>
