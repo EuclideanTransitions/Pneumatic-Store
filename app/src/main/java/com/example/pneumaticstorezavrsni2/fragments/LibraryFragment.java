@@ -12,6 +12,8 @@ import com.example.pneumaticstorezavrsni2.fragments.gamedatabase.VideoGameDef;
 import androidx.fragment.app.Fragment;
 import com.example.pneumaticstorezavrsni2.R;
 import java.util.List;
+
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import com.example.pneumaticstorezavrsni2.adapters.GameCardAdapter;
@@ -26,7 +28,7 @@ public class LibraryFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_library, container, false);
 
         recyclerView = view.findViewById(R.id.libraryRecycler);
-        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+        recyclerView.setLayoutManager(new GridLayoutManager(getContext(), 2));
 
         loadGames();
 
