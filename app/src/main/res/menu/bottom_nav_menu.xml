@@ -8,6 +8,7 @@
         android:title="Store" />
     <item
         android:id="@+id/nav_library"
+        android:contentDescription="LibraryButtonForTest"
         android:icon="@drawable/pneumatic_library"
         android:title="Library" />
     <item

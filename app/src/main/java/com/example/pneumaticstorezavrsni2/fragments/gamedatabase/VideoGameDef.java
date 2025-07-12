@@ -14,7 +14,7 @@ public class VideoGameDef {
     private String description;
     private int imageResId;
 
-    private boolean isBought;  // <-- New field
+    private boolean isBought;
 
     public VideoGameDef(String title, String description, int imageResId) {
         this.title = title;
